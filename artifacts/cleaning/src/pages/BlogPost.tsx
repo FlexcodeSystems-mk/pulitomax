@@ -33,8 +33,17 @@ export default function BlogPost() {
       description: c.excerpt,
       image: post.image,
       datePublished: post.date,
-      author: { "@type": "Organization", name: post.author },
-      publisher: { "@type": "Organization", name: SITE.name },
+      author: { "@type": "Organization", name: post.author, url: SITE.url },
+      publisher: {
+        "@type": "Organization",
+        name: SITE.name,
+        url: SITE.url,
+        logo: { "@type": "ImageObject", url: SITE.defaultOgImage },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `${SITE.url}${localePath(locale, `blog/${slug}`)}`,
+      },
     },
     {
       "@context": "https://schema.org",
