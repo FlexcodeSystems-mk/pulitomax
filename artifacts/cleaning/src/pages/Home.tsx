@@ -27,10 +27,10 @@ import { PlanCard } from "@/pages/Plans";
 import heroImg from "@assets/generated_images/hero.png";
 
 const STATS = [
-  { value: "5.000+", key: "stats.clients" },
+  { value: "50+", key: "stats.clients" },
   { value: "15+", key: "stats.years" },
   { value: "98%", key: "stats.satisfaction" },
-  { value: "12+", key: "stats.cities" },
+  { value: "3+", key: "stats.cities" },
 ] as const;
 
 export default function Home() {
