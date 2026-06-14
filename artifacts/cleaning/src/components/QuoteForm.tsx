@@ -7,10 +7,6 @@ import { CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { SERVICES } from "@/content/services";
 import { SERVICE_AREAS, SITE } from "@/lib/site";
-
-const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as
-  | string
-  | undefined;
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -23,9 +19,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as
+  | string
+  | undefined;
+
 export function QuoteForm({ defaultService }: { defaultService?: string }) {
   const { t, locale } = useI18n();
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const schema = z.object({
     name: z.string().min(2, t("form.errName")),
@@ -57,9 +58,47 @@ export function QuoteForm({ defaultService }: { defaultService?: string }) {
     },
   });
 
-  const onSubmit = async (_data: FormValues) => {
-    await new Promise((r) => setTimeout(r, 900));
-    setSubmitted(true);
+  const onSubmit = async (data: FormValues) => {
+    setError(false);
+
+    if (!WEB3FORMS_ACCESS_KEY) {
+      setError(true);
+      return;
+    }
+
+    const serviceName =
+      SERVICES.find((s) => s.slug === data.service)?.content[locale].name ??
+      data.service;
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `${SITE.name} — ${serviceName} (${data.name})`,
+          from_name: SITE.name,
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          city: data.city || "—",
+          service: serviceName,
+          message: data.message,
+          locale,
+        }),
+      });
+      const json = await res.json();
+      if (res.ok && json.success) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    }
   };
 
   if (submitted) {
@@ -97,6 +136,18 @@ export function QuoteForm({ defaultService }: { defaultService?: string }) {
       noValidate
     >
       <h3 className="mb-6 text-2xl font-bold text-primary">{t("form.quoteTitle")}</h3>
+      {error && (
+        <div
+          className="mb-6 flex items-start gap-3 rounded-xl border border-destructive/30 bg-destructive/5 p-4"
+          data-testid="quote-error"
+        >
+          <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
+          <div>
+            <p className="text-sm font-semibold text-destructive">{t("form.errorTitle")}</p>
+            <p className="text-sm text-muted-foreground">{t("form.errorMsg")}</p>
+          </div>
+        </div>
+      )}
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label={t("form.name")} error={errors.name?.message}>
           <Input {...register("name")} data-testid="input-name" autoComplete="name" />
