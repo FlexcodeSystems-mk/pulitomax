@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { SERVICES } from "@/content/services";
-import { SERVICE_AREAS, SITE } from "@/lib/site";
+import { SERVICE_AREAS, SITE, FORM_ENDPOINT } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,10 +18,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
-const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as
-  | string
-  | undefined;
 
 export function QuoteForm({ defaultService }: { defaultService?: string }) {
   const { t, locale } = useI18n();
@@ -61,26 +57,21 @@ export function QuoteForm({ defaultService }: { defaultService?: string }) {
   const onSubmit = async (data: FormValues) => {
     setError(false);
 
-    if (!WEB3FORMS_ACCESS_KEY) {
-      setError(true);
-      return;
-    }
-
     const serviceName =
       SERVICES.find((s) => s.slug === data.service)?.content[locale].name ??
       data.service;
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `${SITE.name} — ${serviceName} (${data.name})`,
-          from_name: SITE.name,
+          _subject: `${SITE.name} — ${serviceName} (${data.name})`,
+          _template: "table",
+          _captcha: "false",
           name: data.name,
           email: data.email,
           phone: data.phone,
@@ -91,7 +82,7 @@ export function QuoteForm({ defaultService }: { defaultService?: string }) {
         }),
       });
       const json = await res.json();
-      if (res.ok && json.success) {
+      if (res.ok && (json.success === true || json.success === "true")) {
         setSubmitted(true);
       } else {
         setError(true);

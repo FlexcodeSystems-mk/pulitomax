@@ -6,7 +6,7 @@ A premium, multilingual (Italian default, English, German) marketing website for
 
 - App runs via the `artifacts/cleaning: web` workflow (Vite dev server, binds to `PORT`)
 - `pnpm --filter @workspace/cleaning run typecheck` — typecheck the cleaning artifact
-- No backend / no database — all content is static; contact & quote forms submit client-side to Web3Forms (https://api.web3forms.com/submit), which emails submissions to the address tied to the access key
+- No backend / no database — all content is static; contact & quote forms submit client-side to FormSubmit (https://formsubmit.co/ajax/<email>), which emails submissions to the destination address (no API key)
 
 ## Stack
 
@@ -41,7 +41,7 @@ A premium, multilingual (Italian default, English, German) marketing website for
 - Locale routing uses a SINGLE flat wouter router (base = `BASE_URL`), NOT `nest`. `Router()` derives the locale from the first path segment; `LocalizedRouter` declares full locale-prefixed routes via `localePath(locale, ...)`. Do NOT reintroduce `nest`: links use absolute `localePath` hrefs (`/it/services`), and `nest` would prepend the locale base again → doubled prefixes (`/it/it/services`) and 404s on click / language switch.
 - The `I18nProvider` is keyed by locale (`key={locale}`) so it remounts on language change and the locale is fixed by the URL, not stored state.
 - Language switcher (`Navbar`): swap only the leading locale segment of wouter's base-stripped `useLocation()` location: `location.replace(/^\/[a-z]{2}(?=\/|$)/, "")`, then `navigate(\`/${next}${rest}\`)`.
-- Forms submit client-side to Web3Forms (`QuoteForm.tsx`). The access key is read from `import.meta.env.VITE_WEB3FORMS_ACCESS_KEY` (Replit Secret; `VITE_`-prefixed so Vite inlines it at build). On success they show a polished success state; on failure (or missing key) they show an inline error block with WhatsApp/phone fallback. Submissions email the address tied to the key. NOTE: server-side calls to the Web3Forms endpoint from datacenter IPs are blocked by a Cloudflare bot challenge — verify form submission from a real browser, not via curl/node.
+- Forms submit client-side to FormSubmit (`QuoteForm.tsx`; endpoint = `FORM_ENDPOINT` in `site.ts`). No API key/secret. On success they show a polished success state; on failure they show an inline error block (with a "retry" button) plus WhatsApp/phone fallback. FormSubmit success JSON is `{ success: "true" }` (string). Activation: the FIRST submission to a new address triggers a one-time confirmation email to the destination — the recipient must click the link once before submissions deliver. To hide the personal email from scrapers, swap `FORM_ENDPOINT` to a FormSubmit alias (random string from the activation email). NOTE: we previously tried Web3Forms but its endpoint is behind a Cloudflare bot challenge that blocks browser `fetch()` (can't solve JS challenge) — do not switch back.
 - Per-page SEO is handled by the `Seo` component (title/meta/OG + JSON-LD injected into `<head>`).
 
 ## Product

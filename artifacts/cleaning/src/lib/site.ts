@@ -32,6 +32,11 @@ export const SERVICE_AREAS = [
   "Lugano (CH)",
 ];
 
+// FormSubmit endpoint that delivers contact/quote submissions by email.
+// Swap the email for a FormSubmit alias (random string) to hide the address from scrapers.
+export const FORM_ENDPOINT =
+  "https://formsubmit.co/ajax/ebrahim.kandil0210@gmail.com";
+
 export function localePath(locale: Locale, path = ""): string {
   const clean = path.replace(/^\//, "");
   return clean ? `/${locale}/${clean}` : `/${locale}`;
