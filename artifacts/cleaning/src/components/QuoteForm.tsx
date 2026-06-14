@@ -145,6 +145,16 @@ export function QuoteForm({ defaultService }: { defaultService?: string }) {
           <div>
             <p className="text-sm font-semibold text-destructive">{t("form.errorTitle")}</p>
             <p className="text-sm text-muted-foreground">{t("form.errorMsg")}</p>
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="mt-3"
+              onClick={() => setError(false)}
+              data-testid="button-retry-form"
+            >
+              {t("form.retry")}
+            </Button>
           </div>
         </div>
       )}
