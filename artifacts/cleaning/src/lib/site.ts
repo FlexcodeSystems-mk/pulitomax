@@ -12,7 +12,7 @@ export const SITE = {
   addressStreet: "Via Dante 12",
   addressCity: "20121 Milano (MI)",
   addressCountry: "Italia",
-  vat: "P.IVA 12345678901",
+  vat: "P.IVA 04021430121",
   social: {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
