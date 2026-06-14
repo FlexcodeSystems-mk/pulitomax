@@ -3,10 +3,14 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion } from "framer-motion";
-import { CheckCircle2, ShieldCheck } from "lucide-react";
+import { CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { SERVICES } from "@/content/services";
-import { SERVICE_AREAS } from "@/lib/site";
+import { SERVICE_AREAS, SITE } from "@/lib/site";
+
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as
+  | string
+  | undefined;
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

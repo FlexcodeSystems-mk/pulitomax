@@ -160,6 +160,10 @@ const it: Dict = {
     successMsg:
       "Grazie. Il nostro team ti contatterà entro 24 ore con un preventivo personalizzato.",
     another: "Invia un'altra richiesta",
+    errorTitle: "Invio non riuscito",
+    errorMsg:
+      "Si è verificato un problema durante l'invio. Riprova oppure contattaci via WhatsApp o telefono.",
+    retry: "Riprova",
     errName: "Inserisci il tuo nome",
     errEmail: "Inserisci un'email valida",
     errPhone: "Inserisci un numero di telefono valido",
@@ -402,6 +406,10 @@ const en: Dict = {
     successMsg:
       "Thank you. Our team will contact you within 24 hours with a personalized quote.",
     another: "Send another request",
+    errorTitle: "Submission failed",
+    errorMsg:
+      "Something went wrong while sending your request. Please try again, or reach us via WhatsApp or phone.",
+    retry: "Try again",
     errName: "Please enter your name",
     errEmail: "Please enter a valid email",
     errPhone: "Please enter a valid phone number",
@@ -644,6 +652,10 @@ const de: Dict = {
     successMsg:
       "Vielen Dank. Unser Team meldet sich innerhalb von 24 Stunden mit einem persönlichen Angebot.",
     another: "Weitere Anfrage senden",
+    errorTitle: "Senden fehlgeschlagen",
+    errorMsg:
+      "Beim Senden Ihrer Anfrage ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per WhatsApp oder Telefon.",
+    retry: "Erneut versuchen",
     errName: "Bitte geben Sie Ihren Namen ein",
     errEmail: "Bitte geben Sie eine gültige E-Mail ein",
     errPhone: "Bitte geben Sie eine gültige Telefonnummer ein",
