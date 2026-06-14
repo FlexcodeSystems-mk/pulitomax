@@ -11,7 +11,7 @@ A premium, multilingual (Italian default, English, German) marketing website for
 ## Stack
 
 - React 19 + Vite 7, TypeScript
-- Routing: wouter (locale-prefixed, nested routing)
+- Routing: wouter (locale-prefixed, single flat router — no `nest`)
 - i18n: custom React context (`src/lib/i18n.tsx`), locales it/en/de
 - Forms: react-hook-form + zod (`@hookform/resolvers`)
 - Animation: framer-motion
@@ -20,7 +20,7 @@ A premium, multilingual (Italian default, English, German) marketing website for
 
 ## Where things live
 
-- `artifacts/cleaning/src/App.tsx` — router: `/` redirects to `/it`; `/it`, `/en`, `/de` are nested routes wrapping `<Layout>` + page `<Switch>`
+- `artifacts/cleaning/src/App.tsx` — router: `/` redirects to `/it`; `Router()` reads the first path segment to pick the locale, then `LocalizedRouter` wraps `<Layout>` + a `<Switch>` of full locale-prefixed routes (`localePath(locale, "...")`)
 - `artifacts/cleaning/src/lib/i18n.tsx` — i18n provider; `useI18n()` → `{ locale, t, tr, setLocale }`. `t()` = string dot-path, `tr<T>()` = object/array lookup
 - `artifacts/cleaning/src/lib/site.ts` — `SITE`, `SERVICE_AREAS`, `localePath(locale, path?)`, `whatsappLink()`
 - `artifacts/cleaning/src/content/` — `services.ts` (8), `plans.ts` (3), `reviews.ts` (6), `faqs.ts` (22), `blog.ts` (10 posts, `CATEGORIES` (5), `getPost`, `categoryLabel`)
@@ -38,8 +38,9 @@ A premium, multilingual (Italian default, English, German) marketing website for
 
 ## Architecture decisions
 
-- Locale routing uses wouter's `nest` prop: top-level `<Route path="/it" nest>` strips the locale prefix so inner routes are relative. Do NOT use a wildcard (`/it/*?`) with `nest` — it folds the wildcard into the base and every sub-path resolves to `/`.
-- The `I18nProvider` is mounted per-locale inside each nested router so the locale is fixed by the URL, not stored state.
+- Locale routing uses a SINGLE flat wouter router (base = `BASE_URL`), NOT `nest`. `Router()` derives the locale from the first path segment; `LocalizedRouter` declares full locale-prefixed routes via `localePath(locale, ...)`. Do NOT reintroduce `nest`: links use absolute `localePath` hrefs (`/it/services`), and `nest` would prepend the locale base again → doubled prefixes (`/it/it/services`) and 404s on click / language switch.
+- The `I18nProvider` is keyed by locale (`key={locale}`) so it remounts on language change and the locale is fixed by the URL, not stored state.
+- Language switcher (`Navbar`): swap only the leading locale segment of wouter's base-stripped `useLocation()` location: `location.replace(/^\/[a-z]{2}(?=\/|$)/, "")`, then `navigate(\`/${next}${rest}\`)`.
 - Forms have no backend: on submit they show a polished success state only.
 - Per-page SEO is handled by the `Seo` component (title/meta/OG + JSON-LD injected into `<head>`).
 
@@ -53,7 +54,7 @@ Marketing site: home, 8 SEO-optimized service pages, subscription plans (Basic/S
 
 ## Gotchas
 
-- wouter `nest` routes must use a plain prefix path (`/it`), never a wildcard.
+- Locale routing is a single flat wouter router — never reintroduce `nest` (links use absolute `localePath` hrefs, so `nest` doubles the locale prefix → `/it/it/...` and 404s on click).
 - `react-icons/si` does not export `SiLinkedin` — use lucide `Linkedin` for social icons.
 - Verify with `pnpm --filter @workspace/cleaning run typecheck`, not `build` (build needs workflow-provided env).
 

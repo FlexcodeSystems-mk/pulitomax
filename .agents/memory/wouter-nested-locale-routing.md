@@ -1,18 +1,18 @@
 ---
-name: wouter nested locale routing
-description: How to do locale-prefixed nested routes with wouter without every sub-path collapsing to "/"
+name: wouter locale-prefixed routing
+description: How to do locale-prefixed routes (/it, /en, /de) with wouter without doubled prefixes or sub-paths collapsing to "/"
 ---
 
-# wouter nested locale routing
+# wouter locale-prefixed routing
 
-For locale-prefixed routing (`/it`, `/en`, `/de`) wrap each locale in a nested route using a PLAIN prefix path with the `nest` prop:
+**Do NOT use wouter's `nest` prop for locale prefixes if your links use absolute, locale-included hrefs.**
 
-```tsx
-<Route path="/it" nest><LocalizedRouter locale="it" /></Route>
-```
+The `cleaning` artifact generates all links with `localePath(locale, path)` → absolute paths that already include the locale (`/it/services`). `nest` makes each locale router's base `/it`, and wouter then prepends that base AGAIN to every absolute `<Link>`/`navigate` → `/it/it/services` (and language switch → `/it/en/...`). Direct URL loads work, so it looks fine until you click a link or switch language → 404.
 
-**Do NOT** add a wildcard to the path (e.g. `/it/*?`). With `nest`, wouter folds the matched portion into the nested base; if you include the wildcard, the wildcard becomes part of the base and the inner router always sees location `"/"`, so every sub-path silently renders the index/home route instead of the intended page.
+**Correct architecture (no `nest`):** single `<Router base={BASE_URL}>`. A top `Router()` reads the first path segment to pick the locale, then `LocalizedRouter` declares FULL locale-prefixed routes via `localePath(locale, ...)` (e.g. `localePath(locale, "services/:slug")`). Absolute links resolve against `BASE_URL` only — no doubling. Key `<I18nProvider>` by locale to force a clean remount on language change.
 
-**Why:** `nest` already makes the route a prefix match and strips the matched prefix for children. A wildcard is redundant and corrupts the base calculation.
+Language switcher: read wouter's base-stripped `useLocation()` location and swap only the leading locale segment: `location.replace(/^\/[a-z]{2}(?=\/|$)/, "")`, then `navigate(\`/\${next}\${rest}\`)`.
 
-**How to apply:** Any wouter nested router — use the bare prefix path + `nest`. Inner `<Route>` paths are written relative to that prefix (`/`, `/blog`, `/services/:slug`).
+**Why:** `nest` scopes base/hooks to children; it only fits RELATIVE inner links. Mixing it with absolute locale-included hrefs double-prefixes. (Also: with `nest`, never add a wildcard like `/it/*?` — the wildcard folds into the base and every sub-path renders "/".)
+
+**How to apply:** locale-prefixed wouter apps where links/SEO use absolute `localePath` → flat router + full-prefixed route paths, not `nest`.

@@ -30,14 +30,11 @@ const NAV = [
 
 export function Navbar() {
   const { t, locale } = useI18n();
-  const [, navigate] = useLocation();
+  const [location, navigate] = useLocation();
   const [open, setOpen] = useState(false);
 
   const switchLocale = (next: Locale) => {
-    const path = window.location.pathname;
-    const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-    const stripped = path.startsWith(base) ? path.slice(base.length) : path;
-    const rest = stripped.replace(/^\/[a-z]{2}/, "");
+    const rest = location.replace(/^\/[a-z]{2}(?=\/|$)/, "");
     navigate(`/${next}${rest}`);
   };
 
