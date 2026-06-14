@@ -28,6 +28,7 @@ export const SITE = {
 export const SERVICE_AREAS = [
   "Milano",
   "Varese",
+  "Luino",
   "Lugano (CH)",
 ];
 

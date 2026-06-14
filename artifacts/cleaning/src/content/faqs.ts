@@ -65,9 +65,9 @@ export const FAQS: Faq[] = [
   },
   {
     content: {
-      it: { q: "In quali città operate?", a: "Operiamo a Milano, Varese e Lugano (Svizzera). Contattaci per verificare la tua zona." },
-      en: { q: "Which cities do you serve?", a: "We operate in Milan, Varese and Lugano (Switzerland). Contact us to check your area." },
-      de: { q: "In welchen Städten sind Sie tätig?", a: "Wir sind in Mailand, Varese und Lugano (Schweiz) tätig. Fragen Sie nach Ihrem Gebiet." },
+      it: { q: "In quali città operate?", a: "Operiamo a Milano, Varese, Luino e Lugano (Svizzera). Contattaci per verificare la tua zona." },
+      en: { q: "Which cities do you serve?", a: "We operate in Milan, Varese, Luino and Lugano (Switzerland). Contact us to check your area." },
+      de: { q: "In welchen Städten sind Sie tätig?", a: "Wir sind in Mailand, Varese, Luino und Lugano (Schweiz) tätig. Fragen Sie nach Ihrem Gebiet." },
     },
   },
   {
