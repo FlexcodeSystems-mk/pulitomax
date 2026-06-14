@@ -1,0 +1,402 @@
+# Build a Premium Cleaning Services Website for Italy
+
+Create a modern, professional, multilingual cleaning services website for a company operating throughout Italy.
+
+## Business Information
+
+Company Type: Professional Cleaning Services Company
+
+Target Market:
+
+* Residential customers
+* Apartment owners
+* Property managers
+* Condominium administrators
+* Commercial businesses
+* Retail stores
+* Offices
+* Hotels and B&Bs
+* Industrial facilities
+
+Languages:
+
+1. Italian (Default)
+2. English
+3. German
+
+The website must support full multilingual SEO with language-specific URLs:
+
+* /it/
+* /en/
+* /de/
+
+## Design Requirements
+
+Style:
+
+* Modern and premium
+* Clean, trustworthy, professional
+* Mobile-first responsive design
+* Fast loading
+* SEO optimized
+
+Colors:
+
+* White
+* Dark Blue
+* Green accents
+* Professional cleaning industry appearance
+
+Include:
+
+* Sticky navigation
+* Clear CTA buttons
+* WhatsApp contact button
+* Quote request forms
+* Customer reviews
+* Service icons
+* Before/after cleaning imagery
+* Professional cleaning team photos
+
+Use high-quality royalty-free images showing:
+
+* Apartment cleaning
+* Stair cleaning
+* Office cleaning
+* Retail store cleaning
+* Window cleaning
+* Deep cleaning
+* Professional cleaners at work
+* Happy customers
+* Modern buildings
+
+## Website Structure
+
+### Homepage
+
+Hero Section:
+Headline:
+"Professional Cleaning Services Throughout Italy"
+
+Subheadline:
+"Reliable, Professional and Affordable Cleaning Solutions for Homes, Apartments, Offices and Commercial Properties."
+
+Buttons:
+
+* Request Free Quote
+* Call Now
+
+Sections:
+
+* Services Overview
+* Why Choose Us
+* Customer Reviews
+* Subscription Plans
+* Service Areas
+* FAQ
+* Contact Form
+
+### Services Page
+
+Create dedicated SEO pages for each service.
+
+#### Apartment Cleaning
+
+URL:
+
+* /apartment-cleaning
+* /pulizia-appartamenti
+* /wohnungsreinigung
+
+Content:
+
+* Regular cleaning
+* Deep cleaning
+* Move-in cleaning
+* Move-out cleaning
+* Airbnb cleaning
+
+#### Staircase & Condominium Cleaning
+
+URL:
+
+* /stair-cleaning
+
+Content:
+
+* Weekly cleaning
+* Monthly cleaning
+* Building maintenance cleaning
+* Condominium services
+
+#### Office Cleaning
+
+URL:
+
+* /office-cleaning
+
+Content:
+
+* Daily office cleaning
+* Scheduled cleaning
+* Employee workspaces
+* Meeting rooms
+
+#### Retail Store Cleaning
+
+URL:
+
+* /store-cleaning
+
+Content:
+
+* Shop cleaning
+* Showroom cleaning
+* Retail maintenance
+
+#### Window Cleaning
+
+URL:
+
+* /window-cleaning
+
+Content:
+
+* Residential windows
+* Commercial windows
+* High-reach cleaning
+
+#### Deep Cleaning Services
+
+URL:
+
+* /deep-cleaning
+
+Content:
+
+* Post-renovation cleaning
+* Spring cleaning
+* Sanitization
+
+#### Airbnb & Holiday Rental Cleaning
+
+URL:
+
+* /airbnb-cleaning
+
+Content:
+
+* Guest turnover cleaning
+* Linen replacement
+* Fast turnaround
+
+#### Industrial Cleaning
+
+URL:
+
+* /industrial-cleaning
+
+Content:
+
+* Warehouses
+* Factories
+* Industrial facilities
+
+### Subscription Plans Page
+
+Create recurring cleaning subscription packages.
+
+#### Basic Plan
+
+* Monthly cleaning
+* Fixed appointment
+* Online support
+
+#### Standard Plan
+
+* Bi-weekly cleaning
+* Priority scheduling
+* Dedicated support
+
+#### Premium Plan
+
+* Weekly cleaning
+* Priority service
+* Emergency cleaning requests
+
+Features:
+
+* Monthly billing
+* Annual discount
+* Online subscription management
+* Customer portal
+
+Include pricing placeholders that can easily be modified.
+
+### About Us
+
+Content:
+
+* Company story
+* Mission
+* Professional team
+* Certifications
+* Insurance coverage
+* Quality standards
+
+### Reviews Page
+
+Include:
+
+* Customer testimonials
+* Star ratings
+* Google Reviews integration
+* Trust indicators
+
+### Contact Page
+
+Include:
+
+* Contact form
+* Phone number
+* Email
+* WhatsApp
+* Service request form
+* Google Maps integration
+
+## SEO Requirements
+
+Implement:
+
+* SEO-friendly URLs
+* Meta titles
+* Meta descriptions
+* Open Graph tags
+* Schema.org Local Business markup
+* FAQ Schema
+* Service Schema
+* Breadcrumb Schema
+
+Optimize for keywords:
+
+Italian:
+
+* impresa di pulizie
+* pulizia appartamenti
+* pulizia condomini
+* pulizia uffici
+* pulizia negozi
+* pulizia professionale
+* pulizie Italia
+
+English:
+
+* cleaning services Italy
+* apartment cleaning
+* office cleaning
+* commercial cleaning
+
+German:
+
+* Reinigungsservice Italien
+* Wohnungsreinigung
+* Büroreinigung
+* Gebäudereinigung
+
+Generate unique SEO content for every page.
+
+## Blog Section
+
+Create a blog system with categories.
+
+Categories:
+
+* Cleaning Tips
+* Property Maintenance
+* Apartment Cleaning
+* Office Cleaning
+* Hygiene & Safety
+
+Generate the following SEO articles:
+
+1. How Often Should an Apartment Be Professionally Cleaned?
+2. Benefits of Staircase Cleaning for Residential Buildings
+3. Professional Office Cleaning: Productivity Benefits
+4. Airbnb Cleaning Checklist for Property Owners
+5. Deep Cleaning vs Regular Cleaning
+6. Best Cleaning Practices for Retail Stores
+7. How Professional Cleaning Improves Property Value
+8. Seasonal Cleaning Guide for Homes in Italy
+9. Eco-Friendly Cleaning Solutions
+10. Why Businesses Need Professional Cleaning Services
+
+Each article:
+
+* 1200+ words
+* SEO optimized
+* Internal linking
+* FAQ section
+* CTA section
+
+## FAQ Section
+
+Create at least 20 FAQs.
+
+Examples:
+
+Q: How much does apartment cleaning cost?
+Q: Do you provide cleaning supplies?
+Q: Can I book recurring cleaning?
+Q: Do you offer cleaning subscriptions?
+Q: Are your cleaners insured?
+Q: Do you clean offices after working hours?
+Q: Can I cancel my subscription anytime?
+Q: Do you provide Airbnb turnover cleaning?
+Q: Which cities do you serve?
+Q: How do I request a quote?
+
+Include FAQ Schema markup.
+
+## Lead Generation Features
+
+Implement:
+
+* Instant quote form
+* Contact forms
+* WhatsApp integration
+* Call buttons
+* Newsletter signup
+* Exit-intent popup
+* Free estimate CTA
+
+## Technical Requirements
+
+Framework:
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+
+Features:
+
+* Fast loading
+* Mobile responsive
+* SEO optimized
+* Multilingual support
+* Blog CMS
+* Subscription plans
+* Contact forms
+* GDPR compliance
+* Cookie consent
+* Google Analytics integration
+
+CMS:
+
+* Sanity CMS or Strapi
+
+Performance Goals:
+
+* Lighthouse score above 90
+* Core Web Vitals optimized
+
+Generate production-ready code structure, pages, components, SEO setup, CMS integration, and sample content for all pages.

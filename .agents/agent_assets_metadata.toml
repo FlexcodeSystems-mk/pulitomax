@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "yQRF9FLeIUTlrlV3tT2LM"
+uri = "file://attached_assets/generated_images/hero.png"
+type = "image"
+title = "hero cleaners apartment"
+
+[[generated]]
+id = "PrRzxZQ0ZT_ry_6EEMrdk"
+uri = "file://attached_assets/generated_images/svc-apartment.png"
+type = "image"
+title = "apartment cleaning"
+
+[[generated]]
+id = "Nt9yJ5dXnsi6g2iqN-k6n"
+uri = "file://attached_assets/generated_images/svc-staircase.png"
+type = "image"
+title = "staircase cleaning"
+
+[[generated]]
+id = "U080zlUNdFA5tG11cF7_k"
+uri = "file://attached_assets/generated_images/svc-office.png"
+type = "image"
+title = "office cleaning"
+
+[[generated]]
+id = "BVo_ySY_QoKebdhg83l6b"
+uri = "file://attached_assets/generated_images/svc-retail.png"
+type = "image"
+title = "retail store cleaning"
+
+[[generated]]
+id = "O75fMWJB5124MeKCQKfvJ"
+uri = "file://attached_assets/generated_images/svc-window.png"
+type = "image"
+title = "window cleaning"
+
+[[generated]]
+id = "Zte2XiEU1nXJJju29YF4u"
+uri = "file://attached_assets/generated_images/svc-deep.png"
+type = "image"
+title = "deep cleaning"
+
+[[generated]]
+id = "3XKkOTw1EyVq6butLid_z"
+uri = "file://attached_assets/generated_images/svc-airbnb.png"
+type = "image"
+title = "airbnb cleaning"
+
+[[generated]]
+id = "IIjjaEZVE_lRJrWsTOqES"
+uri = "file://attached_assets/generated_images/svc-industrial.png"
+type = "image"
+title = "industrial cleaning"
+
+[[generated]]
+id = "G-QIOA4Q7dQlt6MZNtdYP"
+uri = "file://attached_assets/generated_images/team.png"
+type = "image"
+title = "cleaning team portrait"

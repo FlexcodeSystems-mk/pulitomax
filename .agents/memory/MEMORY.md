@@ -1,0 +1,1 @@
+- [wouter nested locale routing](wouter-nested-locale-routing.md) — use plain prefix path + `nest`; never add a wildcard or every sub-path collapses to "/".
