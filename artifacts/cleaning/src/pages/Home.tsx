@@ -74,7 +74,6 @@ export default function Home() {
         image={heroImg}
         jsonLd={jsonLd}
       />
-
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
@@ -151,19 +150,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Stats */}
       <section className="border-b bg-card">
         <div className="container mx-auto grid grid-cols-2 gap-6 px-4 py-12 lg:grid-cols-4">
           {STATS.map((s, i) => (
             <Reveal key={s.key} delay={i * 0.08} className="text-center">
-              <div className="text-3xl font-bold text-primary sm:text-4xl">{s.value}</div>
+              <div className="font-bold text-primary sm:text-4xl text-[50px]">{s.value}</div>
               <div className="mt-1 text-sm text-muted-foreground">{t(s.key)}</div>
             </Reveal>
           ))}
         </div>
       </section>
-
       {/* Services */}
       <section className="px-4 py-20">
         <div className="container mx-auto">
@@ -202,7 +199,6 @@ export default function Home() {
           </Stagger>
         </div>
       </section>
-
       {/* Why choose us */}
       <section className="bg-muted/40 px-4 py-20">
         <div className="container mx-auto">
@@ -224,7 +220,6 @@ export default function Home() {
           </Stagger>
         </div>
       </section>
-
       {/* Plans teaser */}
       <section className="px-4 py-20">
         <div className="container mx-auto">
@@ -248,7 +243,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Reviews */}
       <section className="bg-muted/40 px-4 py-20">
         <div className="container mx-auto">
@@ -273,7 +267,6 @@ export default function Home() {
           </Stagger>
         </div>
       </section>
-
       {/* Service areas */}
       <section className="px-4 py-20">
         <div className="container mx-auto">
@@ -291,7 +284,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <CtaBanner />
     </>
   );
