@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Pulizia Pro — Cleaning Services Italy"
+title = "PulitoMax — Cleaning Services Italy"
 version = "1.0.0"
 id = "artifacts/cleaning"
 router = "path"

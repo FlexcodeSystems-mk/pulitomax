@@ -55,7 +55,7 @@ const it: Dict = {
     relatedTitle: "Altri servizi",
   },
   why: {
-    title: "Perché Scegliere Pulizia Pro",
+    title: "Perché Scegliere PulitoMax",
     subtitle:
       "Professionalità, affidabilità e attenzione ai dettagli in ogni intervento.",
     items: [
@@ -225,7 +225,7 @@ const it: Dict = {
       "Da oltre 15 anni rendiamo splendenti case e aziende in tutta Italia.",
     storyTitle: "La nostra storia",
     story:
-      "Pulizia Pro nasce nel 2009 a Milano con un'idea semplice: offrire un servizio di pulizia professionale, affidabile e trasparente. Da una piccola squadra siamo cresciuti fino a diventare un partner di fiducia per migliaia di famiglie, amministratori di condominio e aziende in tutta Italia, mantenendo sempre la stessa cura artigianale per ogni dettaglio.",
+      "PulitoMax nasce nel 2009 a Varese con un'idea semplice: offrire un servizio di pulizia professionale, affidabile e trasparente. Da una piccola squadra siamo cresciuti fino a diventare un partner di fiducia per migliaia di famiglie, amministratori di condominio e aziende in tutta Italia, mantenendo sempre la stessa cura artigianale per ogni dettaglio.",
     missionTitle: "La nostra missione",
     mission:
       "Garantire ambienti più sani, sicuri e accoglienti, semplificando la vita dei nostri clienti con un servizio impeccabile e sostenibile.",
@@ -297,7 +297,7 @@ const en: Dict = {
     relatedTitle: "Other services",
   },
   why: {
-    title: "Why Choose Pulizia Pro",
+    title: "Why Choose PulitoMax",
     subtitle:
       "Professionalism, reliability and attention to detail in every job.",
     items: [
@@ -467,7 +467,7 @@ const en: Dict = {
       "For over 15 years we've kept homes and businesses spotless across Italy.",
     storyTitle: "Our story",
     story:
-      "Pulizia Pro was founded in 2009 in Milan with a simple idea: deliver professional, reliable and transparent cleaning. From a small crew we've grown into a trusted partner for thousands of families, property managers and businesses across Italy — always keeping the same craftsman's care for every detail.",
+      "PulitoMax was founded in 2009 in Varese with a simple idea: deliver professional, reliable and transparent cleaning. From a small crew we've grown into a trusted partner for thousands of families, property managers and businesses across Italy — always keeping the same craftsman's care for every detail.",
     missionTitle: "Our mission",
     mission:
       "To create healthier, safer and more welcoming spaces, making our clients' lives easier with impeccable, sustainable service.",
@@ -539,7 +539,7 @@ const de: Dict = {
     relatedTitle: "Weitere Leistungen",
   },
   why: {
-    title: "Warum Pulizia Pro",
+    title: "Warum PulitoMax",
     subtitle:
       "Professionalität, Zuverlässigkeit und Liebe zum Detail bei jedem Einsatz.",
     items: [
@@ -709,7 +709,7 @@ const de: Dict = {
       "Seit über 15 Jahren halten wir Häuser und Unternehmen in ganz Italien makellos sauber.",
     storyTitle: "Unsere Geschichte",
     story:
-      "Pulizia Pro wurde 2009 in Mailand mit einer einfachen Idee gegründet: professionelle, zuverlässige und transparente Reinigung. Aus einem kleinen Team sind wir zu einem vertrauenswürdigen Partner für tausende Familien, Hausverwaltungen und Unternehmen in ganz Italien geworden – stets mit derselben handwerklichen Sorgfalt für jedes Detail.",
+      "PulitoMax wurde 2009 in Varese mit einer einfachen Idee gegründet: professionelle, zuverlässige und transparente Reinigung. Aus einem kleinen Team sind wir zu einem vertrauenswürdigen Partner für tausende Familien, Hausverwaltungen und Unternehmen in ganz Italien geworden – stets mit derselben handwerklichen Sorgfalt für jedes Detail.",
     missionTitle: "Unsere Mission",
     mission:
       "Gesündere, sicherere und einladendere Räume schaffen und unseren Kunden mit makellosem, nachhaltigem Service das Leben erleichtern.",

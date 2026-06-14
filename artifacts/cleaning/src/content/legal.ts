@@ -23,16 +23,16 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     it: {
       title: "Informativa sulla Privacy",
       metaDescription:
-        "Informativa sulla privacy di Pulizia Pro: come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali ai sensi del GDPR.",
+        "Informativa sulla privacy di PulitoMax: come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali ai sensi del GDPR.",
       updatedLabel: "Ultimo aggiornamento",
       updated: "14 giugno 2026",
       intro:
-        "La presente informativa descrive come Pulizia Pro raccoglie, utilizza e protegge i dati personali degli utenti del sito e dei clienti, in conformità con il Regolamento (UE) 2016/679 (GDPR) e la normativa italiana applicabile.",
+        "La presente informativa descrive come PulitoMax raccoglie, utilizza e protegge i dati personali degli utenti del sito e dei clienti, in conformità con il Regolamento (UE) 2016/679 (GDPR) e la normativa italiana applicabile.",
       sections: [
         {
           heading: "Titolare del trattamento",
           body: [
-            "Il titolare del trattamento è Pulizia Pro, con sede in Via Dante 12, 20121 Milano (MI), Italia.",
+            "Il titolare del trattamento è BM SERVIZI DI AHMED EHAB (marchio PulitoMax), con sede legale in Viale Valganna 212, 21100 Varese (VA), Italia. P.IVA 04021430121 — REA VA-396046 — PEC ahmedehab@pec.it.",
             "Per qualsiasi richiesta relativa al trattamento dei tuoi dati puoi contattarci utilizzando i recapiti indicati in fondo a questa pagina.",
           ],
         },
@@ -80,16 +80,16 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     en: {
       title: "Privacy Policy",
       metaDescription:
-        "Pulizia Pro privacy policy: how we collect, use and protect your personal data in accordance with the GDPR.",
+        "PulitoMax privacy policy: how we collect, use and protect your personal data in accordance with the GDPR.",
       updatedLabel: "Last updated",
       updated: "June 14, 2026",
       intro:
-        "This policy describes how Pulizia Pro collects, uses and protects the personal data of website users and customers, in compliance with Regulation (EU) 2016/679 (GDPR) and applicable Italian law.",
+        "This policy describes how PulitoMax collects, uses and protects the personal data of website users and customers, in compliance with Regulation (EU) 2016/679 (GDPR) and applicable Italian law.",
       sections: [
         {
           heading: "Data controller",
           body: [
-            "The data controller is Pulizia Pro, with registered office at Via Dante 12, 20121 Milan (MI), Italy.",
+            "The data controller is BM SERVIZI DI AHMED EHAB (PulitoMax brand), with registered office at Viale Valganna 212, 21100 Varese (VA), Italy. VAT 04021430121 — REA VA-396046 — PEC ahmedehab@pec.it.",
             "For any request regarding the processing of your data, you can contact us using the details at the bottom of this page.",
           ],
         },
@@ -137,16 +137,16 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     de: {
       title: "Datenschutzerklärung",
       metaDescription:
-        "Datenschutzerklärung von Pulizia Pro: wie wir Ihre personenbezogenen Daten gemäß DSGVO erheben, verwenden und schützen.",
+        "Datenschutzerklärung von PulitoMax: wie wir Ihre personenbezogenen Daten gemäß DSGVO erheben, verwenden und schützen.",
       updatedLabel: "Zuletzt aktualisiert",
       updated: "14. Juni 2026",
       intro:
-        "Diese Erklärung beschreibt, wie Pulizia Pro die personenbezogenen Daten von Website-Nutzern und Kunden erhebt, verwendet und schützt – in Übereinstimmung mit der Verordnung (EU) 2016/679 (DSGVO) und dem geltenden italienischen Recht.",
+        "Diese Erklärung beschreibt, wie PulitoMax die personenbezogenen Daten von Website-Nutzern und Kunden erhebt, verwendet und schützt – in Übereinstimmung mit der Verordnung (EU) 2016/679 (DSGVO) und dem geltenden italienischen Recht.",
       sections: [
         {
           heading: "Verantwortlicher",
           body: [
-            "Verantwortlicher ist Pulizia Pro mit Sitz in Via Dante 12, 20121 Mailand (MI), Italien.",
+            "Verantwortlicher ist BM SERVIZI DI AHMED EHAB (Marke PulitoMax) mit Sitz in Viale Valganna 212, 21100 Varese (VA), Italien. USt-IdNr. 04021430121 — REA VA-396046 — PEC ahmedehab@pec.it.",
             "Für Anfragen zur Verarbeitung Ihrer Daten können Sie uns über die am Ende dieser Seite angegebenen Kontaktdaten erreichen.",
           ],
         },
@@ -196,16 +196,16 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     it: {
       title: "Termini e Condizioni",
       metaDescription:
-        "Termini e condizioni di servizio di Pulizia Pro: prenotazioni, preventivi, prezzi, cancellazioni e responsabilità.",
+        "Termini e condizioni di servizio di PulitoMax: prenotazioni, preventivi, prezzi, cancellazioni e responsabilità.",
       updatedLabel: "Ultimo aggiornamento",
       updated: "14 giugno 2026",
       intro:
-        "I presenti termini e condizioni regolano l'utilizzo del sito e la fornitura dei servizi di pulizia di Pulizia Pro. Utilizzando il sito o richiedendo i nostri servizi accetti le condizioni di seguito riportate.",
+        "I presenti termini e condizioni regolano l'utilizzo del sito e la fornitura dei servizi di pulizia di PulitoMax. Utilizzando il sito o richiedendo i nostri servizi accetti le condizioni di seguito riportate.",
       sections: [
         {
           heading: "Servizi offerti",
           body: [
-            "Pulizia Pro fornisce servizi di pulizia professionale per abitazioni, condomini, uffici e attività commerciali in tutta Italia.",
+            "PulitoMax fornisce servizi di pulizia professionale per abitazioni, condomini, uffici e attività commerciali in tutta Italia.",
             "Le descrizioni dei servizi presenti sul sito hanno finalità informativa; l'ambito esatto di ogni intervento viene definito nel preventivo concordato.",
           ],
         },
@@ -234,7 +234,7 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
           heading: "Responsabilità e garanzie",
           body: [
             "Operiamo con personale assicurato e ci impegniamo a garantire elevati standard qualitativi. In caso di insoddisfazione offriamo una nuova pulizia gratuita delle aree interessate.",
-            "Pulizia Pro non è responsabile per danni derivanti da informazioni inesatte fornite dal cliente o da difetti preesistenti dell'immobile.",
+            "PulitoMax non è responsabile per danni derivanti da informazioni inesatte fornite dal cliente o da difetti preesistenti dell'immobile.",
           ],
         },
         {
@@ -251,16 +251,16 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     en: {
       title: "Terms and Conditions",
       metaDescription:
-        "Pulizia Pro terms and conditions of service: bookings, quotes, pricing, cancellations and liability.",
+        "PulitoMax terms and conditions of service: bookings, quotes, pricing, cancellations and liability.",
       updatedLabel: "Last updated",
       updated: "June 14, 2026",
       intro:
-        "These terms and conditions govern the use of the website and the provision of Pulizia Pro cleaning services. By using the website or requesting our services you accept the conditions set out below.",
+        "These terms and conditions govern the use of the website and the provision of PulitoMax cleaning services. By using the website or requesting our services you accept the conditions set out below.",
       sections: [
         {
           heading: "Services offered",
           body: [
-            "Pulizia Pro provides professional cleaning services for homes, residential buildings, offices and businesses throughout Italy.",
+            "PulitoMax provides professional cleaning services for homes, residential buildings, offices and businesses throughout Italy.",
             "Service descriptions on the website are for information purposes; the exact scope of each job is defined in the agreed quote.",
           ],
         },
@@ -289,7 +289,7 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
           heading: "Liability and guarantees",
           body: [
             "We work with insured staff and are committed to high quality standards. If you are not satisfied, we offer a free re-clean of the affected areas.",
-            "Pulizia Pro is not liable for damage arising from inaccurate information provided by the customer or from pre-existing defects of the property.",
+            "PulitoMax is not liable for damage arising from inaccurate information provided by the customer or from pre-existing defects of the property.",
           ],
         },
         {
@@ -306,16 +306,16 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     de: {
       title: "Allgemeine Geschäftsbedingungen",
       metaDescription:
-        "Allgemeine Geschäftsbedingungen von Pulizia Pro: Buchungen, Angebote, Preise, Stornierungen und Haftung.",
+        "Allgemeine Geschäftsbedingungen von PulitoMax: Buchungen, Angebote, Preise, Stornierungen und Haftung.",
       updatedLabel: "Zuletzt aktualisiert",
       updated: "14. Juni 2026",
       intro:
-        "Diese Geschäftsbedingungen regeln die Nutzung der Website und die Erbringung der Reinigungsleistungen von Pulizia Pro. Durch die Nutzung der Website oder die Anforderung unserer Leistungen akzeptieren Sie die nachstehenden Bedingungen.",
+        "Diese Geschäftsbedingungen regeln die Nutzung der Website und die Erbringung der Reinigungsleistungen von PulitoMax. Durch die Nutzung der Website oder die Anforderung unserer Leistungen akzeptieren Sie die nachstehenden Bedingungen.",
       sections: [
         {
           heading: "Angebotene Leistungen",
           body: [
-            "Pulizia Pro bietet professionelle Reinigungsdienste für Wohnungen, Wohnanlagen, Büros und Unternehmen in ganz Italien an.",
+            "PulitoMax bietet professionelle Reinigungsdienste für Wohnungen, Wohnanlagen, Büros und Unternehmen in ganz Italien an.",
             "Die Leistungsbeschreibungen auf der Website dienen der Information; der genaue Umfang jedes Einsatzes wird im vereinbarten Angebot festgelegt.",
           ],
         },
@@ -344,7 +344,7 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
           heading: "Haftung und Garantien",
           body: [
             "Wir arbeiten mit versichertem Personal und verpflichten uns zu hohen Qualitätsstandards. Bei Unzufriedenheit bieten wir eine kostenlose Nachreinigung der betroffenen Bereiche an.",
-            "Pulizia Pro haftet nicht für Schäden, die durch ungenaue Angaben des Kunden oder durch bereits bestehende Mängel der Immobilie entstehen.",
+            "PulitoMax haftet nicht für Schäden, die durch ungenaue Angaben des Kunden oder durch bereits bestehende Mängel der Immobilie entstehen.",
           ],
         },
         {
@@ -363,11 +363,11 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     it: {
       title: "Cookie Policy",
       metaDescription:
-        "Cookie policy di Pulizia Pro: quali cookie utilizziamo e come gestire le tue preferenze.",
+        "Cookie policy di PulitoMax: quali cookie utilizziamo e come gestire le tue preferenze.",
       updatedLabel: "Ultimo aggiornamento",
       updated: "14 giugno 2026",
       intro:
-        "Questa cookie policy spiega cosa sono i cookie, quali tipologie utilizziamo sul sito di Pulizia Pro e come puoi gestire le tue preferenze.",
+        "Questa cookie policy spiega cosa sono i cookie, quali tipologie utilizziamo sul sito di PulitoMax e come puoi gestire le tue preferenze.",
       sections: [
         {
           heading: "Cosa sono i cookie",
@@ -404,11 +404,11 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     en: {
       title: "Cookie Policy",
       metaDescription:
-        "Pulizia Pro cookie policy: which cookies we use and how to manage your preferences.",
+        "PulitoMax cookie policy: which cookies we use and how to manage your preferences.",
       updatedLabel: "Last updated",
       updated: "June 14, 2026",
       intro:
-        "This cookie policy explains what cookies are, which types we use on the Pulizia Pro website and how you can manage your preferences.",
+        "This cookie policy explains what cookies are, which types we use on the PulitoMax website and how you can manage your preferences.",
       sections: [
         {
           heading: "What are cookies",
@@ -445,11 +445,11 @@ export const LEGAL: Record<LegalKind, Record<Locale, LegalDoc>> = {
     de: {
       title: "Cookie-Richtlinie",
       metaDescription:
-        "Cookie-Richtlinie von Pulizia Pro: welche Cookies wir verwenden und wie Sie Ihre Einstellungen verwalten.",
+        "Cookie-Richtlinie von PulitoMax: welche Cookies wir verwenden und wie Sie Ihre Einstellungen verwalten.",
       updatedLabel: "Zuletzt aktualisiert",
       updated: "14. Juni 2026",
       intro:
-        "Diese Cookie-Richtlinie erklärt, was Cookies sind, welche Arten wir auf der Website von Pulizia Pro verwenden und wie Sie Ihre Einstellungen verwalten können.",
+        "Diese Cookie-Richtlinie erklärt, was Cookies sind, welche Arten wir auf der Website von PulitoMax verwenden und wie Sie Ihre Einstellungen verwalten können.",
       sections: [
         {
           heading: "Was sind Cookies",

@@ -1,6 +1,6 @@
-# Pulizia Pro
+# PulitoMax
 
-A premium, multilingual (Italian default, English, German) marketing website for "Pulizia Pro", a professional cleaning services company operating throughout Italy. Frontend-only React + Vite SPA.
+A premium, multilingual (Italian default, English, German) marketing website for "PulitoMax" (legal entity: BM SERVIZI DI AHMED EHAB), a professional cleaning services company operating throughout Italy. Frontend-only React + Vite SPA. Registered office: Viale Valganna 212, 21100 Varese (VA); P.IVA 04021430121; REA VA-396046; PEC ahmedehab@pec.it. Production domain: pulitomax.it.
 
 ## Run & Operate
 

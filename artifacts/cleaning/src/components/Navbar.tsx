@@ -50,7 +50,7 @@ export function Navbar() {
             <Sparkles className="h-5 w-5" />
           </span>
           <span className="text-xl font-bold tracking-tight text-primary">
-            Pulizia<span className="text-secondary">Pro</span>
+            Pulito<span className="text-secondary">Max</span>
           </span>
         </Link>
 
@@ -114,7 +114,7 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
               <SheetHeader>
-                <SheetTitle className="text-left text-primary">Pulizia Pro</SheetTitle>
+                <SheetTitle className="text-left text-primary">PulitoMax</SheetTitle>
               </SheetHeader>
               <nav className="mt-6 flex flex-col gap-1">
                 {NAV.map((item) => (

@@ -36,7 +36,7 @@ export function Footer() {
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
                 <Sparkles className="h-5 w-5" />
               </span>
-              <span className="text-xl font-bold">Pulizia Pro</span>
+              <span className="text-xl font-bold">PulitoMax</span>
             </Link>
             <p className="text-sm text-primary-foreground/70">{t("footer.tagline")}</p>
             <div className="mt-5 flex gap-3">
@@ -133,7 +133,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-sm text-primary-foreground/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Pulizia Pro. {t("footer.rights")} {SITE.vat}</p>
+          <p>© {new Date().getFullYear()} {SITE.legalName} (PulitoMax). {t("footer.rights")} {SITE.vat} · REA {SITE.rea}</p>
           <div className="flex gap-4">
             <Link href={localePath(locale, "privacy")} className="hover:text-secondary transition-colors">{t("footer.privacy")}</Link>
             <Link href={localePath(locale, "terms")} className="hover:text-secondary transition-colors">{t("footer.terms")}</Link>

@@ -1,4 +1,4 @@
-// Generates public/sitemap.xml and public/robots.txt for the Pulizia Pro site.
+// Generates public/sitemap.xml and public/robots.txt for the PulitoMax site.
 // Run with: node scripts/generate-sitemap.mjs
 // NOTE: when you add new pages/services/blog posts, update the lists below.
 import { writeFileSync } from "node:fs";
@@ -9,7 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = resolve(__dirname, "..", "public");
 
 // Keep in sync with src/lib/site.ts SITE.url
-const BASE = "https://www.puliziapro.it";
+const BASE = "https://pulitomax.it";
 const LOCALES = ["it", "en", "de"];
 const DEFAULT_LOCALE = "it";
 

@@ -51,7 +51,7 @@ export const POSTS: Post[] = [
     image: apartmentImg,
     date: "2026-05-28",
     readTime: 6,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Ogni quanto far pulire professionalmente un appartamento?",
@@ -121,7 +121,7 @@ export const POSTS: Post[] = [
     image: staircaseImg,
     date: "2026-05-20",
     readTime: 5,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "I vantaggi della pulizia delle scale nei condomìni",
@@ -191,7 +191,7 @@ export const POSTS: Post[] = [
     image: officeImg,
     date: "2026-05-12",
     readTime: 6,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Pulizia professionale degli uffici: i benefici sulla produttività",
@@ -261,7 +261,7 @@ export const POSTS: Post[] = [
     image: airbnbImg,
     date: "2026-05-04",
     readTime: 7,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Checklist di pulizia Airbnb per i proprietari",
@@ -331,7 +331,7 @@ export const POSTS: Post[] = [
     image: deepImg,
     date: "2026-04-26",
     readTime: 5,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Pulizia approfondita o pulizia ordinaria: le differenze",
@@ -401,7 +401,7 @@ export const POSTS: Post[] = [
     image: retailImg,
     date: "2026-04-18",
     readTime: 5,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Le migliori pratiche di pulizia per i negozi",
@@ -471,7 +471,7 @@ export const POSTS: Post[] = [
     image: heroImg,
     date: "2026-04-10",
     readTime: 6,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Come la pulizia professionale aumenta il valore dell'immobile",
@@ -541,7 +541,7 @@ export const POSTS: Post[] = [
     image: apartmentImg,
     date: "2026-04-02",
     readTime: 7,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Guida alla pulizia stagionale per le case in Italia",
@@ -611,7 +611,7 @@ export const POSTS: Post[] = [
     image: deepImg,
     date: "2026-03-25",
     readTime: 5,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Soluzioni di pulizia eco-friendly",
@@ -681,7 +681,7 @@ export const POSTS: Post[] = [
     image: teamImg,
     date: "2026-03-17",
     readTime: 6,
-    author: "Pulizia Pro",
+    author: "PulitoMax",
     content: {
       it: {
         title: "Perché le aziende hanno bisogno di pulizie professionali",
