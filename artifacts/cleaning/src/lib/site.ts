@@ -3,6 +3,8 @@ import heroImg from "@assets/generated_images/hero.png";
 
 export const SITE = {
   name: "Pulizia Pro",
+  // Production URL — update this to your live domain (used for sitemap & SEO).
+  url: "https://www.puliziapro.it",
   defaultOgImage: heroImg,
   phoneDisplay: "+39 345 051 8988",
   phoneHref: "+393450518988",

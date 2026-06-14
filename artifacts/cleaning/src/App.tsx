@@ -14,6 +14,7 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
 import FAQ from "@/pages/FAQ";
+import { PrivacyPolicy, TermsOfService, CookiePolicy } from "@/pages/Legal";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,9 @@ function LocalizedRouter({ locale }: { locale: Locale }) {
           <Route path="/blog/:slug" component={BlogPost} />
           <Route path="/contact" component={Contact} />
           <Route path="/faq" component={FAQ} />
+          <Route path="/privacy" component={PrivacyPolicy} />
+          <Route path="/terms" component={TermsOfService} />
+          <Route path="/cookies" component={CookiePolicy} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

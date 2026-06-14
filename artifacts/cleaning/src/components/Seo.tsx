@@ -22,6 +22,30 @@ function upsertMeta(attr: "name" | "property", key: string, content: string) {
 }
 
 const JSONLD_ID = "page-jsonld";
+const HREFLANG_ATTR = "data-seo-alt";
+const LOCALES = ["it", "en", "de"] as const;
+const DEFAULT_LOCALE = "it";
+
+function setHreflangAlternates(origin: string, path: string) {
+  document.head
+    .querySelectorAll(`link[${HREFLANG_ATTR}]`)
+    .forEach((el) => el.remove());
+
+  const match = path.match(/^\/(it|en|de)(\/.*)?$/);
+  const rest = match ? match[2] ?? "" : path;
+
+  const add = (hreflang: string, locale: string) => {
+    const link = document.createElement("link");
+    link.setAttribute("rel", "alternate");
+    link.setAttribute("hreflang", hreflang);
+    link.setAttribute("href", `${origin}/${locale}${rest}`);
+    link.setAttribute(HREFLANG_ATTR, "true");
+    document.head.appendChild(link);
+  };
+
+  LOCALES.forEach((loc) => add(loc, loc));
+  add("x-default", DEFAULT_LOCALE);
+}
 
 export function Seo({
   title,
@@ -66,6 +90,8 @@ export function Seo({
       document.head.appendChild(canonical);
     }
     canonical.setAttribute("href", url);
+
+    setHreflangAlternates(origin, path);
 
     const old = document.getElementById(JSONLD_ID);
     if (old) old.remove();

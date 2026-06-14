@@ -135,9 +135,9 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-sm text-primary-foreground/60 sm:flex-row">
           <p>© {new Date().getFullYear()} Pulizia Pro. {t("footer.rights")} {SITE.vat}</p>
           <div className="flex gap-4">
-            <span className="hover:text-secondary cursor-default">{t("footer.privacy")}</span>
-            <span className="hover:text-secondary cursor-default">{t("footer.terms")}</span>
-            <span className="hover:text-secondary cursor-default">{t("footer.cookies")}</span>
+            <Link href={localePath(locale, "privacy")} className="hover:text-secondary transition-colors">{t("footer.privacy")}</Link>
+            <Link href={localePath(locale, "terms")} className="hover:text-secondary transition-colors">{t("footer.terms")}</Link>
+            <Link href={localePath(locale, "cookies")} className="hover:text-secondary transition-colors">{t("footer.cookies")}</Link>
           </div>
         </div>
       </div>

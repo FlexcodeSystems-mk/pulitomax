@@ -1,1 +1,2 @@
 - [wouter nested locale routing](wouter-nested-locale-routing.md) — use plain prefix path + `nest`; never add a wildcard or every sub-path collapses to "/".
+- [SPA hreflang/SEO tags](spa-hreflang-seo.md) — generate hreflang alternates ONLY dynamically per-page (Seo component), never also static in index.html, or non-home routes get conflicting duplicate sets.
