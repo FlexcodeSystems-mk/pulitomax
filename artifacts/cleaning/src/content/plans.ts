@@ -19,7 +19,7 @@ export interface Plan {
 export const PLANS: Plan[] = [
   {
     id: "basic",
-    price: "€XX",
+    price: "€89",
     popular: false,
     content: {
       it: {
@@ -62,7 +62,7 @@ export const PLANS: Plan[] = [
   },
   {
     id: "standard",
-    price: "€XX",
+    price: "€159",
     popular: true,
     content: {
       it: {
@@ -108,7 +108,7 @@ export const PLANS: Plan[] = [
   },
   {
     id: "premium",
-    price: "€XX",
+    price: "€289",
     popular: false,
     content: {
       it: {
