@@ -65,9 +65,9 @@ export const FAQS: Faq[] = [
   },
   {
     content: {
-      it: { q: "In quali città operate?", a: "Operiamo nelle principali città italiane, tra cui Milano, Roma, Torino, Bologna, Firenze e molte altre. Contattaci per verificare la tua zona." },
-      en: { q: "Which cities do you serve?", a: "We operate in major Italian cities including Milan, Rome, Turin, Bologna, Florence and many more. Contact us to check your area." },
-      de: { q: "In welchen Städten sind Sie tätig?", a: "Wir sind in den wichtigsten italienischen Städten tätig, darunter Mailand, Rom, Turin, Bologna, Florenz und viele mehr. Fragen Sie nach Ihrem Gebiet." },
+      it: { q: "In quali città operate?", a: "Operiamo a Milano, Varese e Lugano (Svizzera). Contattaci per verificare la tua zona." },
+      en: { q: "Which cities do you serve?", a: "We operate in Milan, Varese and Lugano (Switzerland). Contact us to check your area." },
+      de: { q: "In welchen Städten sind Sie tätig?", a: "Wir sind in Mailand, Varese und Lugano (Schweiz) tätig. Fragen Sie nach Ihrem Gebiet." },
     },
   },
   {

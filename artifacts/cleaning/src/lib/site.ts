@@ -27,17 +27,8 @@ export const SITE = {
 
 export const SERVICE_AREAS = [
   "Milano",
-  "Roma",
-  "Torino",
-  "Bologna",
-  "Firenze",
-  "Napoli",
-  "Venezia",
-  "Verona",
-  "Genova",
-  "Bergamo",
-  "Brescia",
-  "Padova",
+  "Varese",
+  "Lugano (CH)",
 ];
 
 export function localePath(locale: Locale, path = ""): string {
